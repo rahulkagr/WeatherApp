@@ -29,8 +29,8 @@ Humidity: 21 %
 Wind Speed: 1.52 meter/sec
 Weather Description: clear sky
 ```
-![Screenshot 2024-05-14 at 11 13 48 PM](https://github.com/rahulkagr/WeatherApp/assets/43814671/f7e5aa5f-0cd5-43b3-923a-e7b35a4f4adb)
 
+![Screenshot 2024-05-14 at 11 13 48 PM](https://github.com/rahulkagr/WeatherApp/assets/43814671/107cc8b4-c561-4284-92d5-82756023a8a1)
 
 The "Is this from cache?" key is a boolean value indicating whether the response is from cache or not.
 
