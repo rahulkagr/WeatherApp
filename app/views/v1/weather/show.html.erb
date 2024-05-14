@@ -1,0 +1,28 @@
+
+
+<h1>Weather Information</h1>
+
+<%= form_tag(v1_weather_path, method: :get) do %>
+  <label for="address">Address:</label>
+  <%= text_field_tag 'address',@address,placeholder: 'Enter Address', required: true %><br>
+
+  <label for="pincode">Pincode:</label>
+  <%= text_field_tag 'pincode',@pincode, placeholder: 'Enter Pincode', required: true %><br>
+
+  <%= submit_tag 'Get Weather' %>
+<% end %>
+
+
+
+<% if defined?(@weather) %>
+    <ul>
+        <li>Is this from cache? <%= @weather[:cached] %>
+        <li>Temperature: <%= @weather[:temperature] %> ℃</li>
+        <li>Temperature Minimum: <%= @weather[:temp_min] %> ℃</li>
+        <li>Temperature Maximum: <%= @weather[:temp_max] %> ℃</li>
+        <li>Pressure: <%= @weather[:pressure] %> hPa </li>
+        <li>Humidity: <%= @weather[:humidity] %> % </li>
+        <li>Wind Speed: <%= @weather[:wind_speed] %> meter/sec </li>
+        <li>Weather Description: <%= @weather[:weather_description] %> </li>
+    </ul>
+<% end %>
